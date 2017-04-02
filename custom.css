@@ -1,0 +1,205 @@
+/* 
+ * Custom styling of landing page at www.rosten.net version 1.
+ * Steve-Roger Rosten
+ * April, 2016
+ */
+
+/* sets fonts */
+@font-face {
+  font-family: 'GlacialIndifference-Regular';
+  src: url("../fonts/GlacialIndifference-Regular.eot");
+  src: url("../fonts/GlacialIndifference-Regular.otf");
+  src: url("../fonts/GlacialIndifference-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* removes browser default values */
+html, body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+/* displays html5 structure-elements correct in legacy browsers */
+header, section, footer, aside, nav, article, figure, figcaption {
+  display: block;
+}
+
+/* sets some initial values of web page */
+body {
+  height: 2000px;
+  min-width: 960px;
+  color: rgb(128, 128, 128);                     /* global font color */
+  background-color: rgb(39, 39, 39);             /* global background color */
+  /* global font */
+  font-family: 'GlacialIndifference-Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+header {
+  background-color: rgb(39, 39, 39);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-width: 960px;
+  height: 50px;
+  z-index: 10;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 0px;
+  min-width: 960px;
+  font-size: 93%;
+  text-transform: uppercase;
+}
+
+nav ul {
+  margin-left: 15%;
+  text-align: left;
+  padding: 2px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  margin: 0px;
+  padding: 13px;
+  text-decoration: none;
+  color: rgb(128, 128, 128);
+}
+
+nav li a:hover {
+  color: rgb(39, 39, 39);
+  background-color: rgb(128, 128, 128);
+}
+
+/* display area for animation */
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+/* definition list in #column3 */
+dt {
+  text-transform: uppercase;
+  font-size: 100%;
+}
+
+dd {
+  margin-bottom: 25px;
+}
+
+/* headers and first-child of .steps */
+div + h3 {
+  background-color: rgb(255, 255, 255);
+}
+
+/* headers and paragraphs of .steps */
+h3 + p {
+  background-color: rgb(255, 255, 255);
+}
+
+/* header and definition list of #column3 */
+h3 + dl {
+  background-color: rgb(255, 255, 255);
+}
+
+/* message displayed when JavaScript support is lacking */
+noscript {
+  color: rgb(255, 0, 0);
+  float: right;
+  margin-right: 45px;
+}
+
+/* common styling of info columns */
+.steps {
+  border-bottom: 1px solid rgb(128, 128, 128);
+  width: 80%;
+  margin: auto;
+  letter-spacing: 0.9em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* class for current navigational item */
+.current {
+  text-decoration: underline;
+}
+
+#feature {
+  height: 350px;
+  margin-top: 50px;
+  /* background color same as visualization */
+  background-color: rgb(8, 8, 8);
+}
+
+#intro_text {
+  background-color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center; 
+  letter-spacing: 0.97em;
+  padding: 50px;
+}
+
+#intro_text h2 {
+  font-size: 80%;
+  letter-spacing: 1.4em;
+}
+
+#main_content {
+  height: 900px;
+	background-color: rgb(255, 255, 255);
+}
+
+/* main content columns */
+#column1, #column2, #column3 {
+  height: 850px;
+  margin: 1%;
+  width: 31%;
+  float: left;
+  background-color: rgb(255, 255, 255);
+}
+
+/* renders vertical lines seen between columns */
+#column2 {
+    border-left: 1px solid rgb(128, 128, 128);
+    border-right: 1px solid rgb(128, 128, 128);
+}
+
+/* text in the two first columns */
+#background_text, #tools_text {
+  padding: 5% 15%;
+  line-height: 2em;
+}
+
+/* text in the last column */
+#definition_text {
+  padding: 5% 15%;
+  line-height: 1em;
+}
+
+#contact_info {
+  clear: both;
+  padding: 150px;
+  text-align: center;
+}
+
+#contact_info a {
+  color: rgb(128, 128, 128);
+  border: 1px solid rgb(128, 128, 128);
+  text-decoration: none;
+  padding: 5px 50px;
+}
+
+#contact_info a:hover {
+  color: rgb(39, 39, 39);
+  background-color: rgb(128, 128, 128);
+}

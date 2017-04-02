@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- 
+   - Landing page of www.rosten.net version 1.
+   - Steve-Roger Rosten
+   - April, 2016
+   -->
+<html>
+  <head>
+    <title>ROSTEN.NET</title>
+    <meta charset="utf-8">
+    <meta name="description" 
+          content="portfolio">
+    <meta name="keywords" 
+          content="html5, css3, JavaScript, processing, 
+                   processing.js, visualizing data">
+    <meta name="author" 
+          content="Steve-Roger Rosten">
+    <link href="stylesheets/custom.css"
+          rel="stylesheet" 
+          type="text/css"/>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html" id="home">hjem</a></li>
+          <li><a href="#sub_heading" id="about">om</a></li>
+          <li><a href="#contact_info" id="contact">kontakt</a></li>
+          <li><noscript>Manglende JavaScript-støtte!</noscript></li>
+        </ul>
+      </nav><!-- end nav -->
+    </header><!-- end header -->
+    <div id="feature"><!-- feature section -->
+      <!-- feature visualization -->
+      <canvas id="feature_visualization"
+              data-processing-sources="scripts/particle_dance/particle_dance.pde">
+      </canvas><!-- end #feature_visualization -->
+    </div><!-- end #feature -->
+    <section id="intro_text"><!-- intro text section -->
+      <h1 id="heading">hei, mitt navn er steve</h1>
+      <h2 id="sub_heading">jeg visualiserer med kode</h2>
+    </section><!-- end #intro_text -->
+    <section id="main_content"><!-- main text section -->
+      <div id="column1">
+        <h3 class="steps">bakgrunn</h3>
+        <p id="background_text">
+          Ønsker her å vise hvordan man kan visualisere med ren kode,
+          uten bruk av programvareverktøy, enten det er visualisering av
+          datasett eller kun for å uttrykke seg digitalt.
+          Denne fremgangsmåten gjør programmering morsomt for alle som ønsker å
+          sette seg inn i dette noe overveldende faget fra en annen
+          side enn den som tradisjonelt brukes i undervisning.
+          <br />
+          Jeg forsøker her etterhvert å visualisere datasett som er
+          allment tilgjengelig, og som omhandler det offentlige, og
+          derfor omhandler oss alle.
+        </p>
+      </div><!-- end #column1 -->
+      <div id="column2">
+        <h3 class="steps">verktøy</h3>
+        <p id="tools_text">
+          Etter å ha prøvd forskjellig teknologi har jeg gått tilbake
+          til utgangspunktet fordi, i tillegg til enkelt å muliggjøre
+          visualisering med ren kode, så er det morsomt å bruke.<br />
+          Verktøyet brukt her er Processing som bygger på Java&copy;, og 
+          JavaScript-biblioteket Processing.js som muliggjør kjøring i 
+          nettleser uten utvidelser.<br />
+          Dette gir fordelen av god dokumentasjon, og et aktivt miljø grunnet
+          utstrakt bruk blant studenter, kunstnere, designere,
+          forskere, og entusiaster verden over.
+        </p>
+      </div><!-- end #column2 -->
+      <div id="column3">
+        <h3 class="steps">datasett</h3>
+        <dl id="definition_text">
+          <dt>innhenting</dt>
+          <dd>
+            datasett innhentes lokalt eller over nett
+          </dd>
+          <dt>analysering</dt>
+          <dd>
+            datasettet struktureres etter ønsket formål
+          </dd>
+          <dt>filtrering</dt>
+          <dd>
+            relevant informasjon trekkes ut for økt fokus
+          </dd>
+          <dt>behandling</dt>
+          <dd>
+            datasettet settes opp mot annen informasjon
+          </dd>
+          <dt>representasjon</dt>
+          <dd>
+            fremstilling i form av diagram(er)
+          </dd>
+          <dt>raffinering</dt>
+          <dd>
+            utarbeidelse av visualisering, og visuelt hirarki
+          </dd>
+          <dt>interaksjon</dt>
+          <dd>
+            skape økt interesse med kontrollerfunksjoner
+          </dd>
+        </dl>
+      </div><!-- end #column3 -->
+    </section><!-- end #main_content -->
+    <section id="contact_info"><!-- contact info section -->
+      <h1>kontaktinformasjon</h1>
+      <p>rosten.net er et personlig nettsted som viser noen av mine<br />
+         interesser innen interaksjonsdesign/brukeropplevelse,<br />
+         visualisering med kode, og webdesign/webutvikling.
+      </p>
+      <p>jeg er utdannet innen interaksjonsdesign med<br />
+         fokus på brukeropplevelse for web.
+      </p>
+      <p>send meg gjerne en</p>
+      <p>
+        <a href="mailto:hello@rosten.net">epost</a>
+      </p>
+    </section><!-- end #contact_info -->
+    
+    <!-- link to Processing.js library -->
+    <script src="scripts/processing.min.js" 
+            language="javascript" 
+            type="text/javascript">
+    </script>
+    <!-- link to jQuery -->
+    <script src="scripts/jquery-2.2.0.min.js" 
+            language="javascript" 
+            type="text/javascript">
+    </script>
+    <!-- link to custom navigation script -->
+    <script src="scripts/custom.js" 
+            language="javascript" 
+            type="text/javascript">
+    </script>
+  </body>
+</html>
